@@ -1,0 +1,13 @@
+data/train2017/
+data/annotations/
+bin/
+include/
+lib/
+lib64/
+share/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/ 

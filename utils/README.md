@@ -1,130 +1,90 @@
-# 🖼️ Seentence
+# SEENTENCE
 
-**Seentence** is a deep learning project for automatic image captioning using PyTorch. It takes an image as input and generates a descriptive sentence about its contents, combining computer vision (CNN) and natural language processing (Transformer).
+*Transforming Images into Captions with AI Power*
 
----
-
-📚 **Project Structure**
-
-  📂 datasets              → Custom PyTorch dataset logic
-  
-     →📝 dataset.py
-
-  📂 models                → Encoder-Decoder architecture
-
-     →🧠 captioningModel.py
-    
-     →🧩 cnnEncoder.py
-    
-     →📐 transformerDecoder.py
-    
-
-  📂 utils                 → Vocab, transforms, training tools
-  
-     →🔤 vocab.py
-    
-     →🎛️ dataAugmentation.py
-    
-     →🛠️ trainUtils.py
-     
-
-  📥 getData.py            → Download and unzip
-  
-  🏋️ train.py             → Train the model
-  
-  📊 evaluate.py          → Evaluate BLEU on test set
-  
-  🖼️ testImage.py         → Generate caption for a single image
-  
-  ⚙️ config.yaml           → Configs and hyperparameters
-  
-  📘 README.md             → You are here!
+![Last Commit](https://img.shields.io/badge/last%20commit-yesterday-blue)
+![Python](https://img.shields.io/badge/python-100%25-blue)
+![Languages](https://img.shields.io/badge/languages-1-blue)
 
 ---
 
-⚙️ **Requirements**
+### Built with the tools and technologies:
+
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![CUDA](https://img.shields.io/badge/-CUDA-76B900?logo=nvidia&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C)
+![Pandas](https://img.shields.io/badge/-Pandas-150458)
+![NumPy](https://img.shields.io/badge/-NumPy-013243)
+![tqdm](https://img.shields.io/badge/-tqdm-yellow)
+
+![Pillow](https://img.shields.io/badge/-Pillow-blue)
+
+---
+
+## 📚 Table of Contents
+
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Testing](#testing)
+
+---
+
+## 🧠 Overview
+
+**Seentence** is a powerful developer toolkit designed for building sophisticated image captioning systems. It streamlines data management, model training, and caption generation within a cohesive, modular framework.
+
+### Why Seentence?
+
+This project aims to simplify the development of scalable, high-quality vision-language models. The core features include:
+
+- 🦾 **Powerful Architecture**: Combines Transformers to Vision, Encoder and Decoder for best results
+results.
+- 🧵 **Efficient Data Handling**: Loads and caches large datasets like MSCOCO, ensuring fast access and consistency.
+- 🎯 **End-to-End Workflow**: Supports training, inference, and model management with configurable hyperparameters.
+- 📊 **Progress Visualization**: Tracks training metrics with integrated plotting tools for performance monitoring.
+- 🛠️ **Custom Data Pipelines**: Facilitates preprocessing, tokenization, and batching tailored for image captioning tasks, allowing you to create your own vocabulary.
+
+---
+
+## 🚀 Getting Started
+
+### 📦 Pre-requisites
 
 - Python 3.8+
 - PyTorch
 - torchvision
+- CUDA Toolkit (optional for GPU acceleration)
+- numpy
 - pandas
-- Pillow
+- tqdm
+- matplotlib
 - nltk
-- pyyaml
-- tqdm (opcional)
+- Pillow
 
-Install requirements:
+### 🔧 Installation
 
+```bash
+git clone https://github.com/ErickRad/Seentence.git
+
+Optional: 
+python -m venv Seentence
+
+cd Seentence
 pip install -r requirements.txt
 
 ---
 
-📥 **Download the Dataset**
+## 🧪 Usage 
 
-Run the script below to automatically download and extract the dataset:
+### Create captions for images
 
-python data/getData.py
+- Paste your image in the Seetence directory
 
-It will:
+```bash
+python captionize.py --image-path <your_image.jpg> --num-caption 5 (Default: 1) 
 
-- Download the image zip and annotations CSV from HuggingFace
 
-- Extract images to data/images/
-
-- Clean up the zip file
-
----
-
-🔧 **Configuration**
-
-Edit the config.yaml file to adjust:
-
--Paths (imagesPath, annotationsPath)
-
--Hyperparameters (batch size, learning rate, hidden size, etc.)
-
--Training settings (epochs, dropout, scheduler)
-
----
-
-🚀 **Training**
-
-To train the model:
-
-python train.py
-
-- This will save the best model to the path specified in config.yaml under     checkpoints folder.
-
----
-
-📈 **Evaluation**
-
-To evaluate your model on the test split (BLEU score):
-
-python evaluate.py
-
----
-
-🧪 **Test a Single Image**
-You can run a custom image through the model to generate a caption (after training):
-
-python testImage.py --image-path path/to/image.jpg
-
----
-
-🧠 **Model Architecture**
-CNN Encoder: Extracts visual features from input image
-
-Transformer Decoder: Generates caption token-by-token
-
-Vocabulary: Handles tokenization, mapping, padding
-
---
-
-📝 **Dataset**
-I have used the Flickr30k dataset, which contains 30,000 images and 5 human-written captions per image. Normalized to 224x224 and sent to model to recongnize edges, formats and shadows. After that, ponderate wheights to words to contruct a sentence about the image.
-
----
-
-🤝  **Contributing**
-Feel free to open issues, suggest improvements, or fork the repo.

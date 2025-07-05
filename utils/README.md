@@ -26,10 +26,15 @@
 
 - [Overview](#overview)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
+  - [Pre-requisites](#pre-requisites)
   - [Installation](#installation)
-  - [Usage](#usage)
-  - [Testing](#testing)
+
+- [Usage](#usage)
+  - [Create captions](#create-captions)
+  - [Improve the model](#improve-the-model)
+
+- [Contribute](#contribute)
+  - [License](#license)
 
 ---
 
@@ -68,25 +73,44 @@ results.
 ### 🔧 Installation
 
 ```bash
+
+Without 
 git clone https://github.com/ErickRad/Seentence.git
 
 Optional: 
 python -m venv Seentence
-
 cd Seentence
+source bin/activate
+
+
 pip install -r requirements.txt
 
 ```
 
----
-
 ## 🧪 Usage 
 
-### Create captions for images
+### 🔠 Create captions for images
 
 - Paste your image in the Seetence directory
 
 ```bash
 python captionize.py --image-path <your_image.jpg> --num-caption 5 (Default: 1) 
 
+```
 
+### ⚡️ Improve the model
+
+```bash
+Python train.py
+
+```
+
+---
+
+## Contribute 
+
+### 📃 License
+
+- This software was built above BSD 3-Clause License, feel free to contribute and improve this project.
+
+---

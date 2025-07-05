@@ -76,6 +76,8 @@ python -m venv Seentence
 cd Seentence
 pip install -r requirements.txt
 
+```
+
 ---
 
 ## 🧪 Usage 

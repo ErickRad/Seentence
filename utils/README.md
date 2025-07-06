@@ -63,22 +63,28 @@
 - pandas
 - tqdm
 - matplotlib
--nltk
+- nltk
 - Pillow
 
 ### 🔧 Installation
 
+If you don't know what is it, use first option!
+
+Whithout virtual environment:
+
 ```bash
-
-Without 
 git clone https://github.com/ErickRad/Seentence.git
+cd Seentence
+pip install -r requirements.txt
 
-Optional: 
+```
+With virtual environment:
+
+```bash
+git clone https://github.com/ErickRad/Seentence.git
 python -m venv Sentence
 cd Seentence
 source bin/activate
-
-
 pip install -r requirements.txt
 
 ```

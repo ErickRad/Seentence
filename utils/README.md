@@ -70,7 +70,7 @@
 
 If you don't know what is it, use first option!
 
-Whithout virtual environment:
+Without virtual environment:
 
 ```bash
 git clone https://github.com/ErickRad/Seentence.git

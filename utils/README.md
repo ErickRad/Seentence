@@ -103,7 +103,7 @@ python captionize.py --image-path <your_image.jpg> --num-caption 5 (Default: 1)
 ### ⚡️ Improve the model
 
 ```bash
-Python train.py
+python train.py
 
 ```
 

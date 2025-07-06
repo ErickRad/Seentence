@@ -1,4 +1,4 @@
-# SEENTENCE
+# SENTENCE
 
 *Transforming Images into Captions with AI Power*
 
@@ -13,7 +13,7 @@
 ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?logo=pytorch&logoColor=white)
 ![CUDA](https://img.shields.io/badge/-CUDA-76B900?logo=nvidia&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C)
+![Matplotl ib](https://img.shields.io/badge/-Matplotlib-11557C)
 ![Pandas](https://img.shields.io/badge/-Pandas-150458)
 ![NumPy](https://img.shields.io/badge/-NumPy-013243)
 ![tqdm](https://img.shields.io/badge/-tqdm-yellow)
@@ -22,7 +22,7 @@
 
 ---
 
-## 📚 Table of Contents
+## 📚Table of Contents
 
 - [Overview](#overview)
 - [Getting Started](#getting-started)
@@ -40,15 +40,11 @@
 
 ## 🧠 Overview
 
-**Seentence** is a powerful developer toolkit designed for building sophisticated image captioning systems. It streamlines data management, model training, and caption generation within a cohesive, modular framework.
+**Sentence** is a transformer-based neural network created to extract features from images and, through a context behind it, generate a coherent caption based on the vocabulary, combining advanced deep learning techniques.
 
-### Why Seentence?
-
-This project aims to simplify the development of scalable, high-quality vision-language models. The core features include:
+### Why Sentence?
 
 - 🦾 **Powerful Architecture**: Combines Transformers to Vision, Encoder and Decoder for best results
-results.
-- 🧵 **Efficient Data Handling**: Loads and caches large datasets like MSCOCO, ensuring fast access and consistency.
 - 🎯 **End-to-End Workflow**: Supports training, inference, and model management with configurable hyperparameters.
 - 📊 **Progress Visualization**: Tracks training metrics with integrated plotting tools for performance monitoring.
 - 🛠️ **Custom Data Pipelines**: Facilitates preprocessing, tokenization, and batching tailored for image captioning tasks, allowing you to create your own vocabulary.
@@ -57,7 +53,7 @@ results.
 
 ## 🚀 Getting Started
 
-### 📦 Pre-requisites
+### 📦 Prerequisites
 
 - Python 3.8+
 - PyTorch
@@ -67,7 +63,7 @@ results.
 - pandas
 - tqdm
 - matplotlib
-- nltk
+-nltk
 - Pillow
 
 ### 🔧 Installation
@@ -78,7 +74,7 @@ Without
 git clone https://github.com/ErickRad/Seentence.git
 
 Optional: 
-python -m venv Seentence
+python -m venv Sentence
 cd Seentence
 source bin/activate
 
@@ -113,4 +109,4 @@ Python train.py
 
 - This software was built above BSD 3-Clause License, feel free to contribute and improve this project.
 
----
+--- 

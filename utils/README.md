@@ -89,6 +89,8 @@ pip install -r requirements.txt
 
 ```
 
+---
+
 ## 🧪 Usage 
 
 ### 🔠 Create captions for images

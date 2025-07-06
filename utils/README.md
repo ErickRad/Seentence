@@ -1,6 +1,6 @@
 # SENTENCE
 
-*Transforming Images into Captions with AI Power*
+*Transforming Images into Captions with AI*
 
 ![Last Commit](https://img.shields.io/badge/last%20commit-yesterday-blue)
 ![Python](https://img.shields.io/badge/python-100%25-blue)

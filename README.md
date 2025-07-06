@@ -1,4 +1,4 @@
-# SENTENCE
+# SEENTENCE
 
 *Transforming Images into Captions with AI*
 

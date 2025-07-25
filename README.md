@@ -39,7 +39,7 @@
 
 ## 🧠 Overview
 
-**Sentence** is a transformer-based neural network created to extract features from images and, through a context behind it, generate a coherent caption based on the vocabulary, combining advanced deep learning techniques.
+**Seentence** is a transformer-based neural network created to extract features from images and, through a context behind it, generate a coherent caption based on the vocabulary, combining advanced deep learning techniques.
 
 ### Why Sentence?
 
@@ -52,7 +52,7 @@
 
 ## 🚀 Getting Started
 
-### 📦 Prerequisites
+### 📦 Pre-requisites
 
 - Python 3.8+
 - PyTorch
